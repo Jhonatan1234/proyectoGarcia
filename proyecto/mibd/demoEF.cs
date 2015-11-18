@@ -11,6 +11,6 @@ namespace proyecto
         public DbSet <buss> BUS { get; set; }
         public DbSet <chofer> choferes { get; set; }
         public  DbSet <pasajero> pasajeros { get; set; }
-         public  DbSet <empleado> Empleados { get; set; }
+         public  DbSet <empleado> Empleados { get; set;}
     }
 }

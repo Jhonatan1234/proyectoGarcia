@@ -9,7 +9,7 @@ namespace proyecto
 {
     public class empleado
     {
-        [Key]public int idempleado { get; set; }
+        [Key]public int idempleado { get; set;}
         public String nombre { get; set; }
         public String Apellido { get; set; }
         public int cedula { get; set; }

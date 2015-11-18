@@ -8,7 +8,7 @@ namespace proyecto
 {
     public class pasajero
     {
-        [Key]public int idpasajero { get; set; }
+        [Key]public int idpasajero { get; set;}
         public String Nombre { get; set; }
         public int codigo_pasajero { get; set; }
         public String nacionalidad { get; set; }
