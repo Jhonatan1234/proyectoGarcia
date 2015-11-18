@@ -5,14 +5,14 @@ namespace proyecto.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<proyecto.inicio>
+    internal sealed class Configuration : DbMigrationsConfiguration<proyecto.demoEF>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(proyecto.inicio context)
+        protected override void Seed(proyecto.demoEF context)
         {
             //  This method will be called after migrating to the latest version.
 

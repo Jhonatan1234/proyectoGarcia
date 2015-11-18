@@ -60,17 +60,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="buss.cs" />
-    <Compile Include="chofer.cs" />
+    <Compile Include="mibd\buss.cs" />
+    <Compile Include="mibd\chofer.cs" />
     <Compile Include="choferes.xaml.cs">
       <DependentUpon>choferes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="demoEF.cs" />
-    <Compile Include="empleado.cs" />
+    <Compile Include="mibd\demoEF.cs" />
+    <Compile Include="mibd\empleado.cs" />
     <Compile Include="empleados.xaml.cs">
       <DependentUpon>empleados.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pasajero.cs" />
+    <Compile Include="mibd\pasajero.cs" />
+    <Compile Include="Migrations\201511180321206_empleado.cs" />
+    <Compile Include="Migrations\201511180321206_empleado.Designer.cs">
+      <DependentUpon>201511180321206_empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="pasajeross.xaml.cs">
       <DependentUpon>pasajeross.xaml</DependentUpon>
     </Compile>
@@ -93,8 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ejemplo.cs" />
-    <Compile Include="inicio.cs" />
+    <Compile Include="mibd\ejemplo.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -113,11 +117,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201511131612590_ejemplito.cs" />
-    <Compile Include="Migrations\201511131612590_ejemplito.Designer.cs">
-      <DependentUpon>201511131612590_ejemplito.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="nuevaventana.xaml.cs">
       <DependentUpon>nuevaventana.xaml</DependentUpon>
     </Compile>
@@ -134,8 +133,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201511131612590_ejemplito.resx">
-      <DependentUpon>201511131612590_ejemplito.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511180321206_empleado.resx">
+      <DependentUpon>201511180321206_empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

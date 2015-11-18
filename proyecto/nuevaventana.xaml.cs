@@ -28,5 +28,28 @@ namespace proyecto
         {
            
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+             //instanciar bd
+            if (Regex.IsMatch(txtsueldo.Text, @"^\d+$") && Regex.IsMatch(txtnombre.Text,@"^[a-zA-Z]+$"))
+            { 
+                demoEF db = new demoEF();
+                Empleado emp = new Empleado();
+                emp.Nombre = txtnombre.Text;
+                emp.Sueldo = int.Parse(txtsueldo.Text);
+                emp.DepartamentoId = (int)cbdepartamento.SelectedValue;
+                db.Empleado.Add(emp);
+                db.SaveChanges();
+
+            }
+            else { MessageBox.Show("Solo Numeros y letras"); }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        }
     }
 }
