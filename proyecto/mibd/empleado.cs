@@ -17,5 +17,6 @@ namespace proyecto
         public String direccion{ get; set; }
         public String codigo { get; set; }
         public String genero { get; set; }
+       
     }
 }

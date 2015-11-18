@@ -14,7 +14,7 @@ namespace proyecto
         public String nacionalidad { get; set; }
         public String Direccion { get; set; }
         public String Destino { get; set; }
-        public virtual int busscodigobus { get; set; }
+        public virtual int bussidbus { get; set; }
 
     }
 }

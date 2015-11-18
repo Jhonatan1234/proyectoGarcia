@@ -13,6 +13,7 @@ namespace proyecto
        public String Apellidocho { get; set; }
        public String Direccion {get;set;}
        public String tel {get;set;}
-       public virtual String pasajeroDireccion { get; set; }
+       public virtual ICollection<empleado> empleados { get; set; }
+       public virtual int pasajeroidpasajero { get; set; }
     }
 }

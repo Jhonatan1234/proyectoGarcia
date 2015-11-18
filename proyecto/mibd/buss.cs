@@ -16,6 +16,7 @@ namespace proyecto
         public String tipo_bus {get; set;}
         public String marca_bus {get;set;}
         public String color_bus { get; set; }
+        public virtual ICollection<pasajero> pasajeros { get; set; }
 
     }
 }
