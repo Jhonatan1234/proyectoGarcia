@@ -60,6 +60,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="buss.cs" />
+    <Compile Include="chofer.cs" />
+    <Compile Include="choferes.xaml.cs">
+      <DependentUpon>choferes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="demoEF.cs" />
+    <Compile Include="empleado.cs" />
+    <Compile Include="empleados.xaml.cs">
+      <DependentUpon>empleados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pasajero.cs" />
+    <Compile Include="pasajeross.xaml.cs">
+      <DependentUpon>pasajeross.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vta.xaml.cs">
+      <DependentUpon>vta.xaml</DependentUpon>
+    </Compile>
+    <Page Include="choferes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="empleados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,6 +99,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="nuevaventana.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pasajeross.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\201511131612590_ejemplito.cs" />
@@ -81,6 +118,9 @@
       <DependentUpon>201511131612590_ejemplito.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="nuevaventana.xaml.cs">
+      <DependentUpon>nuevaventana.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,7 +149,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
