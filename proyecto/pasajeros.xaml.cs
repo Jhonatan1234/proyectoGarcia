@@ -16,47 +16,47 @@ using System.Windows.Shapes;
 namespace proyecto
 {
     /// <summary>
-    /// Interaction logic for choferes.xaml
+    /// Interaction logic for pasajeros.xaml
     /// </summary>
-    public partial class choferes : Window
+    public partial class pasajeros : Window
     {
-        public choferes()
+        public pasajeros()
         {
             InitializeComponent();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ape.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(tel.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(des.Text, @"^[a-zA-Z]+$"))
+            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(co.Text, @"^\d+$") && Regex.IsMatch(na.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(des.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(b.Text, @"^\d+$"))
             {
                 demoEF db = new demoEF();
-               chofer emp = new chofer();
+                pasajero emp = new pasajero();
 
-                emp.Nombrecho = nom.Text;
-                emp.Apellidocho = ape.Text;
+                emp.Nombre = nom.Text;
+                emp.codigo_pasajero = int.Parse(co.Text);
+                emp.nacionalidad = na.Text;
                 emp.Direccion = dir.Text;
-                emp.tel = tel.Text;
-                emp.pasajeroDireccion = des.Text;
-                db.choferes.Add(emp);
+                emp.Destino = des.Text;
+                emp.bussidbus = int.Parse(b.Text);
+                db.pasajeros.Add(emp);
                 db.SaveChanges();
 
             }
-            else { MessageBox.Show("Solo  letras"); }
+            else { MessageBox.Show("Solo  letras , codigo y buss son numero"); }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(idcho.Text, @"^\d+$"))
+            if (Regex.IsMatch(idpa.Text, @"^\d+$"))
             {
                 demoEF db = new demoEF();
-                int idc = int.Parse(idcho.Text);
-                var emp = db.choferes.SingleOrDefault(x => x.idchofer == idc);/*from x in db.Empleado
+                int idbus = int.Parse(idpa.Text);
+                var emp = db.pasajeros.SingleOrDefault(x => x.idpasajero == idbus);/*from x in db.Empleado
                       where x.id == id
                       select x;*/
                 if (emp != null)
                 {
-                    db.choferes.Remove(emp);
+                    db.pasajeros.Remove(emp);
 
                     db.SaveChanges();
                 }
@@ -66,21 +66,22 @@ namespace proyecto
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(idcho.Text, @"^\d+$"))
+            if (Regex.IsMatch(idpa.Text, @"^\d+$"))
             {
                 demoEF db = new demoEF();
 
-                int idbus = int.Parse(idcho.Text);
-                var bus = db.choferes.SingleOrDefault(x => x.idchofer == idbus);/*from x in db.Empleado
+                int idbus = int.Parse(idpa.Text);
+                var bus = db.pasajeros.SingleOrDefault(x => x.idpasajero == idbus);/*from x in db.Empleado
                       where x.id == id
                       select x;*/
                 if (bus != null)
                 {
-                    bus.Nombrecho = nom.Text;
-                    bus.Apellidocho = ape.Text;
+                    bus.Nombre = nom.Text;
+                    bus.codigo_pasajero = int.Parse(co.Text);
+                    bus.nacionalidad = na.Text;
                     bus.Direccion = dir.Text;
-                    bus.tel = tel.Text;
-                    bus.pasajeroDireccion = des.Text;
+                    bus.Destino = des.Text;
+                    bus.bussidbus = int.Parse(b.Text);
 
                     db.SaveChanges();
                 }

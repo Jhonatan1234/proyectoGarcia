@@ -1,4 +1,4 @@
-namespace proyecto.Migrations
+    namespace proyecto.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

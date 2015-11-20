@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -79,9 +81,17 @@
     <Compile Include="Migrations\201511181608133_act.Designer.cs">
       <DependentUpon>201511181608133_act.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511182234546_casa.cs" />
+    <Compile Include="Migrations\201511182234546_casa.Designer.cs">
+      <DependentUpon>201511182234546_casa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511200127291_core.cs" />
+    <Compile Include="Migrations\201511200127291_core.Designer.cs">
+      <DependentUpon>201511200127291_core.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="pasajeross.xaml.cs">
-      <DependentUpon>pasajeross.xaml</DependentUpon>
+    <Compile Include="pasajeros.xaml.cs">
+      <DependentUpon>pasajeros.xaml</DependentUpon>
     </Compile>
     <Compile Include="vta.xaml.cs">
       <DependentUpon>vta.xaml</DependentUpon>
@@ -111,7 +121,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pasajeross.xaml">
+    <Page Include="pasajeros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511181608133_act.resx">
       <DependentUpon>201511181608133_act.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511182234546_casa.resx">
+      <DependentUpon>201511182234546_casa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511200127291_core.resx">
+      <DependentUpon>201511200127291_core.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -30,15 +30,16 @@ namespace proyecto
             if (Regex.IsMatch(id.Text, @"^\d+$"))
             {
                 demoEF db = new demoEF();
+               
                 int idbus = int.Parse(id.Text);
-                var emp = db.BUS.SingleOrDefault(x => x.idbus == idbus);/*from x in db.Empleado
+                var bus = db.BUS.SingleOrDefault(x => x.idbus == idbus);/*from x in db.Empleado
                       where x.id == id
                       select x;*/
-                if (emp != null)
+                if (bus != null)
                 {
-                    emp.tipo_bus = nombus.Text;
-                     emp.marca_bus = marbus.Text;
-                     emp.color_bus = cobus.Text;
+                    bus.tipo_bus = nombus.Text;
+                     bus.marca_bus = marbus.Text;
+                     bus.color_bus = cobus.Text;
                    
                     db.SaveChanges();
                 }

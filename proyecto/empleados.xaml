@@ -3,6 +3,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="empleados" Height="300" Width="300">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nombre" Margin="10,10,130.09,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="cedula" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="telefono" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,4.356"/>
+        <Label Content="direccion" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,3.15"/>
+        <TextBox x:Name="nom" HorizontalAlignment="Left" Height="23" Margin="120,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="nom_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="ape" HorizontalAlignment="Left" Height="23" Margin="120,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="ce" HorizontalAlignment="Left" Height="23" Margin="120,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="23" Margin="120,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="co" HorizontalAlignment="Left" Height="23" Margin="120,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3"/>
+        <Label Content="codigo" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,3.15"/>
+        <Label Content="genero&#xD;&#xA;" HorizontalAlignment="Left" Margin="19,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="chofer&#xD;&#xA;" HorizontalAlignment="Left" Margin="19,222,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ge" HorizontalAlignment="Left" Height="23" Margin="120,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="19,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="120,248,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="5,248,-3,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Click="Button_Click_3"/>
+        <TextBox x:Name="dir" HorizontalAlignment="Left" Height="23" Margin="120,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="cho" HorizontalAlignment="Left" Height="23" Margin="120,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="idem" HorizontalAlignment="Left" Height="23" Margin="120,-10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+        <Label Content="id" HorizontalAlignment="Left" Margin="19,-10,0,254" Height="26" VerticalAlignment="Bottom"/>
+
     </Grid>
 </Window>
