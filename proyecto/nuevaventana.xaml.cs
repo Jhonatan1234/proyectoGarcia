@@ -56,7 +56,7 @@ namespace proyecto
 
                 emp.tipo_bus = nombus.Text;
                 emp.marca_bus = marbus.Text;
-                emp.color_bus = cobus.Text;
+                emp.color_bus= cobus.Text;
                 db.BUS.Add(emp);
                 db.SaveChanges();
 

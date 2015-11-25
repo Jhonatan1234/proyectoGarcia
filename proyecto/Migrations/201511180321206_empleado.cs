@@ -29,7 +29,7 @@ namespace proyecto.Migrations
                         tel = c.String(),
                         pasajeroDireccion = c.String(),
                     })
-                .PrimaryKey(t => t.idchofer);
+                .PrimaryKey(t => t.idchofer );
             
             CreateTable(
                 "dbo.empleadoes",
