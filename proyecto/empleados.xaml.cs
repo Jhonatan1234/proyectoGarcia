@@ -103,6 +103,10 @@ namespace proyecto
             dbfrid.ItemsSource = registros.ToList();
         }
 
+   
+
+     
+
 
         
 

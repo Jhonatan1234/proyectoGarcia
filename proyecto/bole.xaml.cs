@@ -24,20 +24,7 @@ namespace proyecto
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void combo1_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void grid_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+     
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
@@ -45,29 +32,33 @@ namespace proyecto
             combo2.ItemsSource = db.BUS.ToList();
             combo2.DisplayMemberPath = "marca_bus";
             combo2.SelectedValuePath = "idbus";
+            combo2.SelectedIndex = 0;
+            
 
             combo3.ItemsSource = db.choferes.ToList();
-            combo3.DisplayMemberPath = "nombrecho";
+            combo3.DisplayMemberPath = "Nombrecho";
             combo3.SelectedValuePath = "idchofer";
+            combo3.SelectedIndex = 0;
 
             combo4.ItemsSource = db.pasajeros.ToList();
             combo4.DisplayMemberPath = "Nombre";
             combo4.SelectedValuePath = "idpasajero";
+            combo4.SelectedIndex = 0;
 
             combo5.ItemsSource = db.Empleados.ToList();
             combo5.DisplayMemberPath = "nombre";
             combo5.SelectedValuePath = "idempleado";
+            combo5.SelectedIndex = 0;
 
             
           
         }
 
+     
+
       
 
-        private void tex4_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
 
        
 
