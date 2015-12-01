@@ -1,0 +1,38 @@
+﻿<Window x:Class="proyecto.bole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="bole" Height="370.149" Width="431.343" Loaded="Window_Loaded_1">
+    <Grid x:Name="grid" Margin="0,0,38,10" Loaded="grid_Loaded">
+        <ComboBox x:Name="combo1" HorizontalAlignment="Left" Margin="141,92,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combo1_SelectionChanged">
+            <ListBoxItem Content="Aguas Calientes"/>
+            <ListBoxItem Content="Chihuahua"/>
+            <ListBoxItem Content="coahuila"/>
+            <ListBoxItem Content="Durango"/>
+            <ListBoxItem Content="Guadalajara"/>
+            <ListBoxItem Content="Guanajuato"/>
+            <ListBoxItem Content="San Luis"/>
+            <ListBoxItem Content="Sinaloa"/>
+            <ListBoxItem Content="Sonora"/>
+            <ListBoxItem Content="Tijuana"/>
+            <ListBoxItem Content="Veracruz"/>
+        </ComboBox>
+        <ComboBox x:Name="combo2" HorizontalAlignment="Left" Margin="141,174,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        <ComboBox x:Name="combo3" HorizontalAlignment="Left" Margin="141,213,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tex1" HorizontalAlignment="Left" Height="23" Margin="141,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Numero Boleto&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="42,123,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="35,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tex4" HorizontalAlignment="Left" Height="23" Margin="141,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Initialized="tex4_Initialized" TextChanged="tex4_TextChanged"/>
+        <ComboBox x:Name="combo4" HorizontalAlignment="Left" Margin="141,254,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Destino&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autobus&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Chofer" HorizontalAlignment="Left" Margin="35,201,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pasajera" HorizontalAlignment="Left" Margin="35,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="mpleado&#xD;&#xA;" HorizontalAlignment="Left" Margin="35,281,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="combo5" HorizontalAlignment="Left" Margin="141,281,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="fac" HorizontalAlignment="Left" Margin="141,43,0,0" VerticalAlignment="Top" Loaded="DatePicker_Loaded_1"/>
+        <Button Content="Registrar boleto&#xD;&#xA;" HorizontalAlignment="Left" Height="34" Margin="72,308,0,-12" VerticalAlignment="Top" Width="94"/>
+        <Button Content="Consultar boletos&#xD;&#xA;" HorizontalAlignment="Left" Margin="207,308,0,-12" VerticalAlignment="Top" Width="93" Height="34" RenderTransformOrigin="0.278,1.033"/>
+
+    </Grid>
+</Window>

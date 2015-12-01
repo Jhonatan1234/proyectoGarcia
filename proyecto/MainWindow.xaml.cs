@@ -57,5 +57,11 @@ namespace proyecto
             pasajeros vta = new pasajeros();
             vta.Show();
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            bole vta = new bole();
+            vta.Show();
+        }
     }
 }

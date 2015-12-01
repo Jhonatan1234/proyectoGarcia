@@ -25,24 +25,21 @@ namespace proyecto
             InitializeComponent();
         }
 
-        private void nom_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+      
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ape.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ce.Text, @"^\d+$") && Regex.IsMatch(tel.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(co.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ge.Text, @"^[a-zA-Z]+$"))
+            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ape.Text, @"^[a-zA-Z]+$")  && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$")  && Regex.IsMatch(ge.Text, @"^[a-zA-Z]+$"))
             {
                 demoEF db = new demoEF();
                 empleado emp = new empleado();
 
                 emp.nombre = nom.Text;
                 emp.Apellido = ape.Text;
-                emp.cedula = int.Parse(ce.Text);
-                 emp.telefono = tel.Text;
+                
+                 
                  emp.direccion = dir.Text;
-                 emp.codigo = co.Text;
+                
                  emp.genero = ge.Text;
                 
                 db.Empleados.Add(emp);
@@ -85,16 +82,25 @@ namespace proyecto
                 {
                     bus.nombre = nom.Text;
                     bus.Apellido = ape.Text;
-                    bus.cedula = int.Parse(ce.Text);
-                    bus.telefono = tel.Text;
+                    
+                   
                     bus.direccion = dir.Text;
-                    bus.codigo = co.Text;
+                 
                     bus.genero = ge.Text;
 
                     db.SaveChanges();
                 }
             }
             else { MessageBox.Show("Solo Numeros , Solo letras"); }
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+           var registros = from s in db.Empleados
+
+                            select s;
+            dbfrid.ItemsSource = registros.ToList();
         }
 
 

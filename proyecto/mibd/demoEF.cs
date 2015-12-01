@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using proyecto.mibd;
+using proyecto.Migrations;
 namespace proyecto
 {
     public class demoEF : DbContext
@@ -13,8 +15,9 @@ namespace proyecto
         public  DbSet <pasajero> pasajeros { get; set; }
 
          public  DbSet <empleado> Empleados { get; set; }
-        
 
+         public DbSet <boleto> boletos { get; set; }
+         
        
 
     }

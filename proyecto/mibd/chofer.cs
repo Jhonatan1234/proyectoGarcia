@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using proyecto.mibd;
 namespace proyecto
 {
    public class chofer
@@ -12,10 +13,9 @@ namespace proyecto
        public String Nombrecho {get;set;}
        public String Apellidocho { get; set; }
        public String Direccion {get;set;}
-       public String tel {get;set;}
-      
-       
-       public virtual String pasajeroDireccion { get; set;}
+    
+
+       public virtual ICollection<boleto> boletos { get; set; }
 
     }
 }

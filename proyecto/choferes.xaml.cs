@@ -28,7 +28,7 @@ namespace proyecto
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ape.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(tel.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(des.Text, @"^[a-zA-Z]+$"))
+            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(ape.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$"))
             {
                 demoEF db = new demoEF();
                chofer emp = new chofer();
@@ -36,8 +36,8 @@ namespace proyecto
                 emp.Nombrecho = nom.Text;
                 emp.Apellidocho = ape.Text;
                 emp.Direccion = dir.Text;
-                emp.tel = tel.Text;
-                emp.pasajeroDireccion = des.Text;
+             
+                
                 db.choferes.Add(emp);
                 db.SaveChanges();
 
@@ -79,8 +79,8 @@ namespace proyecto
                     bus.Nombrecho = nom.Text;
                     bus.Apellidocho = ape.Text;
                     bus.Direccion = dir.Text;
-                    bus.tel = tel.Text;
-                    bus.pasajeroDireccion = des.Text;
+                   
+                   
 
                     db.SaveChanges();
                 }

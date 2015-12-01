@@ -1,21 +1,17 @@
 ﻿<Window x:Class="proyecto.choferes"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="choferes" Height="300" Width="300">
-    <Grid>
+        Title="choferes" Height="385.8" Width="330">
+    <Grid Margin="0,0,2,7">
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="35,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
         <TextBox x:Name="nom" HorizontalAlignment="Left" Height="23" Margin="142,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="ape" HorizontalAlignment="Left" Height="23" Margin="142,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="dir" HorizontalAlignment="Left" Height="23" Margin="142,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="23" Margin="142,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="des" HorizontalAlignment="Left" Height="23" Margin="142,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="apellido" HorizontalAlignment="Left" Margin="37,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
         <Label Content="Direccion" HorizontalAlignment="Left" Margin="34,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
-        <Label Content="tel" HorizontalAlignment="Left" Margin="35,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
-        <Label Content="Destino&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
-        <Button Content="Altas&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,244,0,4" Width="75" Click="Button_Click_1"/>
+        <Button Content="Altas&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,244,0,83" Width="79" Click="Button_Click_1"/>
         <Button Content="Baja" HorizontalAlignment="Left" Margin="121,244,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <Button Content="Cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="217,244,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <Button Content="Cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="217,244,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_3" Height="22"/>
         <Label Content="ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="idcho" HorizontalAlignment="Left" Height="23" Margin="142,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 

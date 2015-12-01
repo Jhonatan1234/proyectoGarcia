@@ -27,17 +27,17 @@ namespace proyecto
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(co.Text, @"^\d+$") && Regex.IsMatch(na.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(des.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(b.Text, @"^\d+$"))
+            if (Regex.IsMatch(nom.Text, @"^[a-zA-Z]+$")  && Regex.IsMatch(na.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(dir.Text, @"^[a-zA-Z]+$"))
             {
                 demoEF db = new demoEF();
                 pasajero emp = new pasajero();
 
                 emp.Nombre = nom.Text;
-                emp.codigo_pasajero = int.Parse(co.Text);
+              
                 emp.nacionalidad = na.Text;
                 emp.Direccion = dir.Text;
-                emp.Destino = des.Text;
-                emp.bussidbus = int.Parse(b.Text);
+                
+               
                 db.pasajeros.Add(emp);
                 db.SaveChanges();
 
@@ -77,16 +77,21 @@ namespace proyecto
                 if (bus != null)
                 {
                     bus.Nombre = nom.Text;
-                    bus.codigo_pasajero = int.Parse(co.Text);
+                  
                     bus.nacionalidad = na.Text;
                     bus.Direccion = dir.Text;
-                    bus.Destino = des.Text;
-                    bus.bussidbus = int.Parse(b.Text);
+                    
+                   
 
                     db.SaveChanges();
                 }
             }
             else { MessageBox.Show("Solo Numeros , Solo letras"); }
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

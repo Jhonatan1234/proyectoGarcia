@@ -37,7 +37,7 @@ namespace proyecto
                       select x;*/
                 if (bus != null)
                 {
-                    bus.tipo_bus = nombus.Text;
+                    bus.clase_bus = nombus.Text;
                      bus.marca_bus = marbus.Text;
                      bus.color_bus = cobus.Text;
                    
@@ -55,7 +55,7 @@ namespace proyecto
                 demoEF db = new demoEF();
                 buss emp = new buss();
 
-                emp.tipo_bus = nombus.Text;
+                emp.clase_bus = nombus.Text;
                 emp.marca_bus = marbus.Text;
                 emp.color_bus = cobus.Text;
                 db.BUS.Add(emp);
