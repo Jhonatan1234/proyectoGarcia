@@ -87,5 +87,14 @@ namespace proyecto
             }
             else { MessageBox.Show("Solo Numeros , Solo letras"); }
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            var registros = from s in db.choferes
+
+                            select s;
+            con.ItemsSource = registros.ToList();
+        }
     }
 }

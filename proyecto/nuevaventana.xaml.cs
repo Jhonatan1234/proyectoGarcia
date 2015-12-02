@@ -93,6 +93,15 @@ namespace proyecto
             else { MessageBox.Show("Solo numeros #id"); }
         }
 
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            var registros = from s in db.BUS
+
+                            select s;
+            consu.ItemsSource = registros.ToList();
+        }
+
         }
     }
 

@@ -76,6 +76,7 @@
     <Compile Include="empleados.xaml.cs">
       <DependentUpon>empleados.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mibd\facturarboleto.cs" />
     <Compile Include="mibd\pasajero.cs" />
     <Compile Include="Migrations\201511300123158_pro.cs" />
     <Compile Include="Migrations\201511300123158_pro.Designer.cs">

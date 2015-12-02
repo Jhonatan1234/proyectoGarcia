@@ -11,9 +11,20 @@
         <TextBox x:Name="idpa" HorizontalAlignment="Left" Height="23" Margin="137,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="na" HorizontalAlignment="Left" Height="23" Margin="137,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="dir" HorizontalAlignment="Left" Height="23" Margin="137,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="alta" HorizontalAlignment="Left" Margin="16,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="baja" HorizontalAlignment="Left" Margin="116,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <Button Content="cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="217,238,0,0" Width="75" Click="Button_Click_3"/>
+        <Button Content="alta" HorizontalAlignment="Left" Margin="21,166,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="baja" HorizontalAlignment="Left" Margin="115,166,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="217,166,0,83" Width="75" Click="Button_Click_3"/>
+        <DataGrid x:Name="consulta" HorizontalAlignment="Left" Margin="20,199,0,0" VerticalAlignment="Top" Height="56" Width="129" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.091"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <Button Content="Consulta" HorizontalAlignment="Left" Margin="162,224,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
 
     </Grid>
 </Window>

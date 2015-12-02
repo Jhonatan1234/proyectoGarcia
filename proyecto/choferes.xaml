@@ -9,11 +9,13 @@
         <TextBox x:Name="dir" HorizontalAlignment="Left" Height="23" Margin="142,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="apellido" HorizontalAlignment="Left" Margin="37,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
         <Label Content="Direccion" HorizontalAlignment="Left" Margin="34,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.466,2.172"/>
-        <Button Content="Altas&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,244,0,83" Width="79" Click="Button_Click_1"/>
-        <Button Content="Baja" HorizontalAlignment="Left" Margin="121,244,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <Button Content="Cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="217,244,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_3" Height="22"/>
+        <Button Content="Altas&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,169,0,158" Width="79" Click="Button_Click_1"/>
+        <Button Content="Baja" HorizontalAlignment="Left" Margin="120,170,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Cambios&#xD;&#xA;" HorizontalAlignment="Left" Margin="227,170,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_3" Height="22"/>
         <Label Content="ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="idcho" HorizontalAlignment="Left" Height="23" Margin="142,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Consulta" HorizontalAlignment="Left" Margin="235,237,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
+        <DataGrid x:Name="con" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Height="99" Width="212"/>
 
     </Grid>
 </Window>

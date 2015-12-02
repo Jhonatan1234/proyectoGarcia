@@ -93,5 +93,14 @@ namespace proyecto
         {
 
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            demoEF db = new demoEF();
+            var registros = from s in db.pasajeros
+
+                            select s;
+            consulta.ItemsSource = registros.ToList();
+        }
     }
 }
